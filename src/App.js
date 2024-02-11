@@ -1,24 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import GridGame from './components/GridGame'
+import {AnimalGame} from './components/AnimalGame'
+import CircleGame from './components/CircleGame';
+import Dark_mode from './components/dark_mode/Dark_mode';
+import Main from './components/educaseAssignment/Main';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Main />
+    </>
   );
 }
 

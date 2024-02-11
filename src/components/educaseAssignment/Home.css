@@ -1,0 +1,259 @@
+body{
+    background-color: #ffffff;
+}
+.container{
+    height: 87vh;
+    margin:4vh 38% 0vh;
+    flex-direction: column;
+    border: 0.001rem solid #adabab;
+    background-color: #f7f8f9;
+    box-shadow: 0.1px 0.1px rgb(128, 128, 128,0.3);
+}
+.inner-container{
+    margin: 62vh 16px 30px;
+}
+ h2{
+    font-size: 23px;
+    margin: 10px auto;
+
+}
+p{
+    color: rgb(118, 117, 117);
+    font-size: medium;
+    margin: 0;
+}
+.btn2{
+    background-color: #D9CCF9;
+    color: black;
+    border: none;
+    padding: 1.5vh 0.6vw;
+    border-radius: 0.3rem;
+    width: 100%;
+    margin:0.4vh 0;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.4s ease-out 0.1s;
+}
+
+.btn1{
+    background-color: #612CE8;
+    border: none;
+    color: white;
+    padding: 1.5vh 0.6vw;
+    border-radius: 0.3rem;
+    width: 100%;
+    margin:3vh 0 0.7vh;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.4s ease-out 0.1s;
+ 
+}
+
+.headdingSection{
+    padding:5vh 1.5vw 4vh;
+}
+.inputSection{position:relative;
+    padding:0 1.5vw 3vh;}
+
+.inputSection>span{
+    color:#612CE8;
+    position:absolute;
+    left:4vh;
+    top:-1.3vh;
+    background-color:white;
+    font-size:small
+}
+.inputSection>input{padding:1.4vh;
+    width:94%;
+    border-radius:1vh;border:0.09vh solid gray;
+    font-size:12px;
+    font-weight:500;
+    background-color: rgba(246, 246, 246, 0.1);
+}
+
+.agencySection{
+    display:flex;
+    flex-direction:column;
+}
+.agencySection>p{
+    padding:0 1.8vw 0;
+    font-size:small;
+    font-weight:500;
+    color: black;
+
+}
+.agencySection>div{
+    display:flex;
+    flex-direction:row;
+    gap:1vh;
+    justify-content:flex-start;
+    padding:1vh 1.5vw;
+    font-size:small;
+    font-weight:500;
+}
+.buttonSection{
+    margin:15vh 0 5vh;
+}
+.loginBtn{
+    background-color: rgb(174, 170, 164,0.5);
+    color: white;
+    width: 90%;
+    margin: -1vh 1.5vw 0;
+    border: none;
+    font-weight: bold;
+    padding: 1.5vh 0.6vw;
+    border-radius: 1vh;
+    transition: background-color 0.4s ease-out 0.1s;
+}
+.transBtn{
+    background-color: rgb(63, 159, 255);
+}
+.accSettings{
+        display:flex;
+        color: rgb(72, 72, 72);
+        justify-content:start;
+        align-items: center;
+        padding-left: 5%;
+        width:95%;
+        height:7vh;
+        background-color:#ffffff;
+        border-radius: 2px;
+        box-shadow: 0 0.2px rgb(128, 128, 128,0.5);
+}
+.image{
+    height: 70px;
+    width: 70px;
+    border-radius: 70px;
+    object-fit: cover;
+    object-position: 1% 0%;
+}
+.imageContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    align-items:line;
+    padding: 3vh 4% 3vh;
+    gap: 5%;
+    position: relative;
+}
+.Name{
+    font-weight: 700;
+    font-size: small;
+    padding-bottom: 4%;
+}
+.mail{
+    font-size: small;
+}
+.cam{
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    background-color: #612CE8;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 23%;
+    left: 20%;
+}
+.text{
+    font-size: small;
+    padding: 0% 5%;
+    line-height: 1.4;
+    margin-bottom: 10%;
+}
+.dotted-line{
+    height: 57%;
+    color: rgb(217, 217, 217);
+    position: relative;
+}
+.dotted-line::before{
+    content: "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -- - - - - - - - - - -";
+    letter-spacing: -1.56px;
+    position: absolute;
+    top: 0;
+}
+.dotted-line::after{
+    content: "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -- - - - - - - - - - -";
+    letter-spacing: -1.56px;
+    position: absolute;
+    bottom: 0;
+}
+@media screen and (max-width: 1250px) {
+    .container{
+        margin: 4vh 37% 0;
+    }
+  }
+  @media screen and (max-width: 1150px) {
+    .container{
+        margin: 4vh 36% 0;
+    }
+  }
+  @media screen and (max-width:1000px){
+    .container{
+        margin: 4vh 33% 0;
+    }
+    .inputSection>input{
+        width: 90%;
+    }
+  }
+
+  @media screen and (max-width:900px){
+    .container{
+        margin: 4vh 31% 0;
+    }
+
+  }
+  @media screen and (max-width:800px){
+    .container{
+        margin: 4vh 28% 0;
+    }
+  }
+  @media screen and (max-width:700px){
+    .container{
+        margin: 4vh 22% 0;
+    }
+    .buttonSection{
+        margin: auto 20px;
+    }
+  }
+  @media screen and (max-width:600px){
+    .container{
+        margin: 4vh 18% 0;
+    }
+    .buttonSection{
+        margin:10px;
+    }
+    .mail{
+        font-size: x-small;
+    }
+  }
+
+
+  @media screen and (max-width: 550px) {
+    .container{
+        margin: 4vh 15% 0;
+    }
+    h2{
+        font-size: large;
+    }
+    p{
+        font-size: small;
+    }
+    .Name{
+        font-size: x-small;
+    }
+    .mail{
+        font-size: xx-small;
+    }
+  }
+  @media screen and (max-height:600px){
+    .buttonSection{
+        margin: auto 20px;
+    }
+    .inputSection>span{
+        font-size: x-small;
+    }
+    .agencySection>div{
+        font-size: x-small;
+    }
+  }
